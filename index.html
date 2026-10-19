@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 20/10 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+  <div id="particles"></div>
+
+  <main class="container">
+    <!-- Màn hình mở đầu -->
+    <section class="panel" id="intro">
+      <div class="mascot">🐧</div>
+      <p class="eyebrow">SPECIAL DAY · 20/10</p>
+      <h1>Hôm nay có gì đặc biệt?</h1>
+      <p class="subtitle">
+        Một bài kiểm tra nho nhỏ để xác định độ sigma
+        của bạn trong ngày hôm nay.
+      </p>
+      <button class="btn primary" id="startBtn">
+        BẮT ĐẦU THÔI ✨
+      </button>
+    </section>
+
+    <!-- Mini game -->
+    <section class="panel hidden" id="game">
+      <div class="topline">
+        <span id="questionCount">CÂU 1 / 3</span>
+        <span id="scoreLabel">Điểm: 0</span>
+      </div>
+
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+
+      <div class="mascot">💭</div>
+      <h2 id="questionText"></h2>
+      <div class="answers" id="answers"></div>
+
+      <p class="feedback" id="gameFeedback"></p>
+
+      <button class="btn primary hidden" id="nextBtn">
+        CÂU TIẾP THEO →
+      </button>
+    </section>
+
+    <!-- Kết quả -->
+    <section class="panel hidden" id="result">
+      <div class="mascot">🏆</div>
+      <p class="eyebrow">KẾT QUẢ KIỂM ĐỊNH</p>
+      <h1 id="resultTitle">Chúc mừng!</h1>
+      <p class="score-big" id="finalScore"></p>
+      <p class="subtitle" id="resultMessage"></p>
+
+      <button class="btn primary" id="giftBtn">
+        MỞ THƯ CHÚC 💌
+      </button>
+    </section>
+
+    <!-- Thư chúc -->
+    <section class="panel letter-panel hidden" id="letter">
+      <div class="mascot">💌</div>
+      <p class="eyebrow">A LITTLE LETTER FOR YOU</p>
+      <h1>Chúc mừng ngày 20/10!</h1>
+
+      <div class="letter-content">
+        <p>Gửi bạn,</p>
+        <p>
+          Chúc bạn có một ngày 20/10 thật vui vẻ,
+          luôn gặp những điều dễ thương và có thật nhiều
+          lý do để mỉm cười.
+        </p>
+        <p>
+          Mong rằng những ngày sắp tới của bạn sẽ có thêm
+          nhiều niềm vui, những người bạn tốt và những
+          khoảnh khắc đáng nhớ.
+        </p>
+        <p>
+          Dù hôm nay có bận rộn đến đâu thì cũng nhớ
+          dành một chút thời gian cho bản thân nhé!
+        </p>
+        <p class="signature">
+          Chúc bạn luôn vui vẻ nha 💗<br>
+          — Một người dùng tiền điện để làm cái này —
+        </p>
+      </div>
+
+      <!-- Nút màn ẩn chỉ nằm trong thư -->
+      <div class="letter-footer">
+        <button class="btn secret-btn" id="specialBtn">
+          🎁 MÀN ẨN
+        </button>
+      </div>
+    </section>
+
+    <!-- Màn ẩn: chỉ mở khi bấm nút -->
+    <section class="panel hidden" id="special">
+      <div class="mascot">😼</div>
+      <p class="eyebrow">SECRET LEVEL · 20/10</p>
+      <h2>Nguyễn Gia Phong có phải người đẹp trai nhất thế giới không? </h2>
+      <p class="subtitle">
+        Hệ thống yêu cầu xác nhận danh tính người đẹp trai.
+        Vui lòng trả lời trung thực.
+      </p>
+
+      <div class="special-actions" id="specialActions">
+        <button class="btn primary" id="yesBtn">
+          CÓ CHỨ 😎
+        </button>
+        <button class="btn secondary" id="noBtn">
+          KHÔNG 🙄
+        </button>
+      </div>
+
+      <p class="feedback" id="specialFeedback"></p>
+      <button class="btn back-btn hidden" id="backBtn">
+        ← QUAY LẠI THƯ
+      </button>
+    </section>
+  </main>
+
+  <footer>MADE WITH 💗 FOR 20/10</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
